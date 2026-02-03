@@ -1,9 +1,4 @@
 #  Password Strength Checker
-
-
-
-## 🇺🇸 English {#-english--english}
-
 A comprehensive cybersecurity project for analyzing **password strength, entropy, common weak patterns**, and demonstrating **secure password hashing (educational demo)**.
 
 ##  Features
@@ -32,7 +27,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🇨🇳 中文 {#-chinese--chinese}
+
 
 用于分析 **密码强度、熵值、常见弱密码模式**，并演示 **安全密码哈希（教学示例）** 的网络安全项目。
 
@@ -62,7 +57,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🇫🇷 Français {#-french--french}
 
 Un projet de cybersécurité pour analyser **la robustesse des mots de passe**, leur **entropie**, les **schémas faibles courants**, et démontrer les **bonnes pratiques de hachage sécurisé**.
 
@@ -91,51 +85,4 @@ pip install -r requirements.txt
 **API Flask:** `python app.py`
 
 ---
-
-## 🇲🇳 Монгол {#-mongolian--mongolian}
-
-**Нэрийн үг-ийн хүч чадал, entropy, хэвшмэл pattern-ийг шалгах** болон **аюулгүй hashing (боловсролын demo)-г үзүүлэх** cybersecurity төслөө.
-
-##  Онцлог шинж
-
-### Үндсэн функцууд
-- **Бодит цагийн шинжилгээ** - Нэрийн үгийн хүч чадлын тухай шуурхай санал
-- **Аюулгүй байдлын стандартын шалгалт** - Том үсэг, жижиг үсэг, цифр, тусгай тэмдэгтийг хүчинтэй болгоно
-- **Entropy тооцоолол** - Нэрийн үгийн нарийн төвөгтэй байдлыг хэмжинэ
-- **Хаалтын жагсаалтын шалгалт** - Нийтлэг / сул нэрийн үг илрүүлнэ
-- **Аюулгүй Hashing** - SHA-256, bcrypt болон argon2 дэмжлэг
-
-##  Хурдан эхлэл
-
-### Суулгах
-```bash
-cd password_strength_checker
-pip install -r requirements.txt
-```
-
-### Ажиллуулах
-**Интерактив горим:** `python main.py`  
-**Demo горим:** `python main.py demo`  
-**Нэг нэрийн үг шалгах:** `python main.py test "MyPassword123!"`  
-**Веб интерфейс:** Браузер дээрээ `web/index.html` нээнэ  
-**Flask API:** `python app.py`
-
----
-
-##  Threat Model & Security
-
-### Assets Protected
-- User passwords
-- Password analysis results
-
-### Threats & Mitigations
--  **Local-only analysis** - Passwords never leave browser
--  **Secure hashing** - bcrypt/argon2 for production
--  **Blacklist checking** - Detects 50+ common passwords
--  **Rate limiting** - 10 req/min prevents brute-force
--  **Constant-time comparison** - Prevents timing attacks
--  **Secure logging** - No sensitive data in logs
--  **Memory safety** - Password strings cleared after use
-
-**Ready for cybersecurity learning and portfolio projects! 🎓**
 
