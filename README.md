@@ -1,19 +1,6 @@
 #  Password Strength Checker
 
-> *"Not just code, but thinking"* - Comprehensive portfolio project with security focus
 
----
-
-<!--  AUTO LANGUAGE SELECTOR -->
-<div align="center">
-
-##  Language Selection | 语言选择 | Sélection de langue | Хэл сонгох
-
-### [🇺🇸 English](#-english--english) | [🇨🇳 中文](#-chinese--chinese) | [🇫🇷 Français](#-french--french) | [🇲🇳 Монгол](#-mongolian--mongolian)
-
-</div>
-
----
 
 ## 🇺🇸 English {#-english--english}
 
