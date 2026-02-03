@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1> Password Strength Checker</h1>
+      <p>Analyze your password security in real-time</p>
+    </header>
+
+    <main>
+      <!-- Input -->
+      <div class="input-card">
+        <label>Password</label>
+        <div class="password-field">
+          <input type="password" id="password" placeholder="Enter password..." />
+          <button id="toggleVisibility">👁️</button>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <section id="results" class="results hidden">
+
+        <!-- Strength -->
+        <div class="card">
+          <h2>Strength</h2>
+          <div class="strength-bar-container">
+            <div id="strengthBar" class="strength-bar"></div>
+          </div>
+          <div class="strength-info">
+            <span id="strengthLabel">Weak</span>
+            <span id="strengthScore">0 / 100</span>
+          </div>
+        </div>
+
+        <!-- Metrics -->
+        <div class="grid">
+          <div class="card">
+            <h3>Length</h3>
+            <p id="lengthValue" class="metric">0</p>
+          </div>
+          <div class="card">
+            <h3>Entropy</h3>
+            <p id="entropyValue" class="metric">0 bits</p>
+          </div>
+        </div>
+
+        <!-- Criteria -->
+        <div class="card">
+          <h3>Security Criteria</h3>
+          <ul class="criteria">
+            <li><span id="upper" class="icon">✗</span> Uppercase letter</li>
+            <li><span id="lower" class="icon">✗</span> Lowercase letter</li>
+            <li><span id="number" class="icon">✗</span> Number</li>
+            <li><span id="special" class="icon">✗</span> Special character</li>
+            <li><span id="lengthCheck" class="icon">✗</span> Min 8 characters</li>
+          </ul>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="card">
+          <h3> Recommendations</h3>
+          <ul id="recommendations"></ul>
+        </div>
+
+      </section>
+
+      <!-- Initial -->
+      <div id="empty" class="empty">
+        Start typing a password to see analysis 
+      </div>
+    </main>
+
+    <footer>
+      <p> Passwords are analyzed locally. Nothing is sent to a server.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
